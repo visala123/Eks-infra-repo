@@ -18,8 +18,8 @@ env:
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     # S3 bucket for the Terraform state
     BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE }}
-    AWS_REGION: us-east-1
-    EKS_CLUSTER: infra-eks
+    AWS_REGION: ap-northeast-2
+    EKS_CLUSTER: eks-infra
 
 jobs:
     terraform:
