@@ -43,9 +43,9 @@ jobs:
               id: init
               run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
 
-            - name: Terraform format
+            - name: Terraform format(auto-fix)
               id: fmt
-              run: terraform fmt -check
+              run: terraform fmt -recursive   #-check
             
             - name: Terraform validate
               id: validate
