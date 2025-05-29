@@ -27,9 +27,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "githubactions-infra-012"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket = "terraform-state-v"
+    key    = "terraform.tfstate.eksinfrarepo"
+    region = "ap-northeast-2"
   }
 
   #required_version = "~> 1.5.1"

@@ -18,3 +18,8 @@ output "cluster_security_group_id" {
   description = "Security group ID for the Amazon Web Service EKS Cluster "
   value       = module.eks.cluster_security_group_id
 }
+
+output "ecr_repo_url" {
+  description = "ECR repository URL"
+  value       = aws_ecr_repository.my_app.repository_url
+}

@@ -1,13 +1,13 @@
 variable "region" {
   description = "AWS region"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-northeast-2"
 }
 
 variable "clusterName" {
   description = "Name of the EKS cluster"
   type        = string
-  default     = "infra-eks"
+  default     = "eks-infra"
 }
 
 ##
