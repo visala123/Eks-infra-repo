@@ -83,7 +83,7 @@ jobs:
               
     install_argocd:
         name: Install Argo CD in EKS
-        needs: trraform   #provision_infra
+        needs: terraform   #provision_infra
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
