@@ -4,13 +4,13 @@ on:
         branches:
             - main
             - stage
-        # paths:
-        #     - terraform/**
+        paths:
+            - terraform/**
     pull_request:
         branches:
             - main
-        # paths:
-        #     - terraform/**
+        paths:
+            - terraform/**
 
 env:
     # Credentials for deployment to AWS
@@ -85,6 +85,7 @@ jobs:
         name: Install Argo CD in EKS
         needs: terraform   #provision_infra
         runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
