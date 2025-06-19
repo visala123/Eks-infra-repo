@@ -6,7 +6,7 @@ This repository provisions an Amazon EKS environment using Terraform. It automat
 
 ##  Folder Structure
 
-![Folder Structure](Screenshot 2025-06-19 175312.png)
+![Folder Structure](https://github.com/visala123/Eks-infra-repo/blob/b389999ebce59ba2c72ffc12b2d12e628ebe9cfc/folder-structure.png)
 
 
 ---
