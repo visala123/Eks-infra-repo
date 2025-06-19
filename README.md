@@ -52,11 +52,11 @@ This workflow is triggered:
 
 You can access the Argo CD UI using the DNS printed in the last step.
 OR else
-Run the following command in the git bash
-kubectl get svc argocd-server -n argocd
-copy the loadbalancer and expose it
-user---admin
-For password run the following command
+Run the following command in the git bash<br>
+kubectl get svc argocd-server -n argocd <br>
+copy the loadbalancer and expose it <br>
+user---admin <br>
+For password run the following command <br>
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 --decode
 
 
