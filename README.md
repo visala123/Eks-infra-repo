@@ -61,7 +61,7 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.pas
 
 
 ##  Destroy Infrastructure
-
+Before terraform destroy you just remove the loadbalancer which was created by Nginix ingresscontroller and image which is in ECR.
 To clean up all provisioned resources, run the following in your terminal:
 
 ```bash
