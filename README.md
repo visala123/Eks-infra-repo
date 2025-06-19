@@ -6,7 +6,7 @@ This repository provisions an Amazon EKS environment using Terraform. It automat
 ---
 
 Folder Structure
-
+\`\`\`
 .
 ├── .github/workflows/
 │   └── terraform.yml        # GitHub Actions workflow for CI/CD
@@ -21,6 +21,7 @@ Folder Structure
 │   └── vpc.tf               # VPC and subnet configuration
 │
 └── .gitignore
+\`\`\`
 
 Note:Before pushing the code to main branch update the secrects under settings->secrets and variables->Actions->secrets->New repository secrets
 secrets.AWS_ACCESS_KEY_ID         #access key id
