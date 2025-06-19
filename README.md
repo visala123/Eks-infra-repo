@@ -1,4 +1,4 @@
-# Infrastructure as Code: EKS Deployment with Terraform and GitHub Actions
+# Streamlining Kubernetes Deployments: CI/CD with GitHub Actions and Helm for EKS
 
 This repository provisions an Amazon EKS environment using Terraform. It automates VPC, EKS cluster, and ECR setup with CI/CD integration via GitHub Actions.
 
@@ -51,6 +51,14 @@ This workflow is triggered:
 - Outputs the LoadBalancer DNS of the Argo CD UI
 
 You can access the Argo CD UI using the DNS printed in the last step.
+OR else
+Run the following command in the git bash
+kubectl get svc argocd-server -n argocd
+copy the loadbalancer and expose it
+user---admin
+For password run the following command
+kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 --decode
+
 
 ##  Destroy Infrastructure
 
